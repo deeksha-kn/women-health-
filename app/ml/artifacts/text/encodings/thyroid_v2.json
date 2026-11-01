@@ -1,0 +1,51 @@
+{
+  "feature_order": [
+    "age",
+    "sex",
+    "tsh_level_mIU_L",
+    "weight_gain",
+    "weight_loss",
+    "hair_loss",
+    "constipation",
+    "slow_heart_rate",
+    "rapid_heartbeat",
+    "muscle_weakness",
+    "difficulty_concentrating",
+    "cold_intolerance",
+    "heat_intolerance",
+    "fatigue",
+    "goiter",
+    "tremor",
+    "atrial_fibrillation"
+  ],
+  "categorical_mappings": {
+    "sex": {
+      "F": 0,
+      "M": 1
+    }
+  },
+  "numeric_columns": [
+    "age",
+    "tsh_level_mIU_L",
+    "weight_gain",
+    "weight_loss",
+    "hair_loss",
+    "constipation",
+    "slow_heart_rate",
+    "rapid_heartbeat",
+    "muscle_weakness",
+    "difficulty_concentrating",
+    "cold_intolerance",
+    "heat_intolerance",
+    "fatigue",
+    "goiter",
+    "tremor",
+    "atrial_fibrillation"
+  ],
+  "target_name": "diagnosis",
+  "target_mapping": {
+    "0": "hyperthyroid",
+    "1": "hypothyroid",
+    "2": "normal"
+  }
+}
