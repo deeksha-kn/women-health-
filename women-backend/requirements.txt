@@ -1,0 +1,37 @@
+# Core framework
+fastapi==0.137.1
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+
+# Database
+sqlalchemy==2.0.51
+alembic==1.18.4
+psycopg[binary]==3.2.9        # PostgreSQL driver
+# pymysql==1.1.0              # Uncomment for MySQL instead of PostgreSQL
+
+# Auth & security
+bcrypt==5.0.0                 # Direct bcrypt usage (NOT via passlib — passlib's bcrypt shim
+                              # is broken against bcrypt>=4.1 due to a removed __about__ attr)
+python-jose[cryptography]==3.3.0
+
+# Request/response validation
+pydantic==2.11.7
+pydantic-settings==2.9.1
+email-validator==2.2.0
+
+# ML — text models
+xgboost==3.2.0
+scikit-learn==1.8.0
+pandas==3.0.2
+numpy==2.4.4
+openpyxl                      # for reading the .xlsx PCOD dataset
+
+# ML — image model
+tensorflow-cpu==2.19.0        # Use tensorflow (not -cpu) if you have a GPU
+pillow==12.1.1
+
+# PDF report generation
+reportlab==4.4.10
+
+# Static file serving
+aiofiles==24.1.0
